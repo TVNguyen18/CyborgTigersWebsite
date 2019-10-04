@@ -2,14 +2,24 @@
     box-sizing: border-box;
 }
 
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/clubPicture.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font-family: 'Assistant', sans-serif;
+    color: white;
 }
 
 h1 {
-    color: #f26419
+    color: #f26419;
 }
 
+/* Screen sizing*/
 .sticky {
     position: fixed;
     top: 0;
@@ -44,4 +54,26 @@ h1 {
     .column1, .column2 {
       width: 100%;
     }
+}
+
+/* Nav bar */
+
+#topNav {
+    overflow: hidden;
+    background-color: #f26419;
+    width: 100%;
+}
+
+#topNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 100%;
+}
+  
+#topNav a:hover {
+    background-color: #337ca0;
+    color: #f2f2f2;
 }
